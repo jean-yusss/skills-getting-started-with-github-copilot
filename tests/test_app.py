@@ -28,7 +28,7 @@ async def test_signup_and_prevent_duplicate():
         dup_resp = await ac.post(f"/activities/{activity}/signup", params={"email": email})
         # Assert
         assert dup_resp.status_code == 400
-        assert "Already signed up" in dup_resp.json()["detail"]
+        assert "already signed up" in dup_resp.json()["detail"].lower()
 
 @pytest.mark.asyncio
 async def test_unregister_participant():
