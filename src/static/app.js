@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <div class="participants-section">
             <p class="participants-title"><strong>Participants (${details.participants.length}):</strong></p>
-            <ul class="participants-list no-bullets">
+            <ul class="participants-list">
               ${participantsList}
             </ul>
           </div>
